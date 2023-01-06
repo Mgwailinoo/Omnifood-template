@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+/* 
+ */
+
 body {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
@@ -50,6 +53,11 @@ html {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--5--cols {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
 /* ----------Heading Components---------- */
 
 .heading-primary,
@@ -90,7 +98,7 @@ html {
 }
 
 /*------Button Component----- */
-
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -131,6 +139,20 @@ html {
   background-color: #fdf2e9;
   /* border: 3px solid #fff; */
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn-form {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  background-color: #2e1907;
+  color: #fae5df;
+  align-self: end;
+}
+
+.btn-form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 strong {
